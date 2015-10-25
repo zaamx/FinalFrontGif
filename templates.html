@@ -1,28 +1,32 @@
 <script id="list-elem" type="text/html">
-<tr>
-	<td align="right" valign="top" class="title">{{ count }}.</td>
-	<td>
-		<center>
-			<a href="#" class="voteelem" data-postid="{{ id }}">
-				<div class="votearrow" title="upvote"></div>
-			</a>
-			<span id="down_{{ id }}"></span>
-		</center>
-	</td>
-	<td class="title">
-		<a href="{{ url }}">{{ title }}</a>
-		<span class="comhead">({{ shortUrl }})</span>
-	</td>
-</tr>
-<tr>
-	<td colspan="2"></td>
-	<td class="subtext buffer-inserted">
-		<span id="score_{{ id }}" data-score="{{ votesLength }}">{{ votesLength }} points</span>
-		{{ dt_create }}|
-		<a href="/item.html?id={{ id }}">{{ commentLength }} comments</a>		
-	</td>
-</tr>
-<tr style="height:5px"></tr>
+<div class="col-sm-3 ">
+  <!-- normal -->
+  <div class="ih-item square effect6 from_top_and_bottom">
+      <!--
+      <a href="#" class="voteelem" data-postid="{{ id }}">
+        <div class="votearrow" title="upvote"></div>
+      </a>
+      <span id="down_{{ id }}"></span>
+      <span id="score_{{ id }}" data-score="{{ votesLength }}">{{ votesLength }} points</span>
+      {{ dt_create }}|
+      <a href="{{ url }}">{{ commentLength }} comments</a>   
+      -->
+
+    <a href="/item.html?id={{ id }}">
+      <div class="img">
+        <img class="img-inner" src="http://placehold.it/320x300" alt="img">
+        <!--<img src="{{ img }}" >-->
+      </div>
+      <div class="info">
+        <h3>{{ title }} <span>{{ count }}.</span> </h3>
+        <p>
+        <span class="comhead">({{ shortUrl }})</span>
+        </p>
+      </div>
+    </a>
+  </div>
+  <!-- end normal -->
+</div>
 </script>
 
 

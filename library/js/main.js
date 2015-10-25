@@ -14,7 +14,7 @@ $(document).ready(function () {
 
   var queryParam = {
     sort: '-actions.ratings.total',
-    per_page: 30,
+    per_page: 8,
     page: 1,
   };
 
@@ -148,6 +148,7 @@ function getSortedPostList(posts, queryParam) {
         shortUrl: Utils.getHostname(post.get('url')),
         // title: post.get('title'),
         title: tituloJson,
+        img : post.get('images'),
         dt_create: Utils.formatDate(post.get('dt_create')),
         commentLength: post.get('actions').comments.length,
         votesLength: post.get('actions').votes.users_upvote.length
