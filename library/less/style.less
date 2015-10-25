@@ -61,3 +61,18 @@ Want to get fancy for no good reason? Knock yourself out.
   // iPhone 5 or iPod Touch 5th generation styles (you can include your own file if you want)
 
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  .votearrow { background-size: 10px; background-image: url("../images/grayarrow2x.gif"); }
+}
+
+.rotate180 {
+  -webkit-transform: rotate(180deg);  /* Chrome and other webkit browsers */
+  -moz-transform:    rotate(180deg);  /* FF */
+  -o-transform:      rotate(180deg);  /* Opera */
+  -ms-transform:     rotate(180deg);  /* IE9 */
+  transform:         rotate(180deg);  /* W3C complaint browsers */
+
+  /* IE8 and below */
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=-1, M12=0, M21=0, M22=-1, DX=0, DY=0, SizingMethod='auto expand');
+}
