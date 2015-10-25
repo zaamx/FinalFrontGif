@@ -118,6 +118,27 @@ body {
   bottom: 40px;
   right: 0;
 }
+#postcontent article .singleGif {
+  width: 100%;
+  background: #000000;
+  padding: 30px 30px 10px;
+}
+#postcontent article .singleGif img {
+  width: 100%;
+  height: auto;
+}
+#postcontent article .footer-gif {
+  background: #d31634;
+  padding: 20px;
+  color: #ffffff;
+}
+#postcontent article .footer-gif a {
+  color: #ffffff;
+}
+.footer {
+  background: #000000;
+  margin-top: 50px;
+}
 .ih-item {
   position: relative;
   -webkit-transition: all 0.35s ease-in-out;
