@@ -1,0 +1,23 @@
+{
+  "name": "stamplay-hackernews-2",
+  "version": "0.0.0",
+  "homepage": "https://github.com/Giuliano84/stamplay-hackernews",
+  "authors": [
+    "giuliano.iacobelli <giuliano.iacobelli@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "algoliasearch": "~3.7.8",
+    "jquery": "1.11.2",
+    "jquery-Mustache": "~0.2.7",
+    "mustache.js": "mustache#~2.1.3",
+    "stamplay-js-sdk": "~1.2.8"
+  }
+}

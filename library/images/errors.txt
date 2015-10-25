@@ -1,0 +1,2 @@
+[Thu Oct 22 2015 02:39:36 GMT-0500 (CDT)] layer "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet,": Expected end of input but "," found.
+[Thu Oct 22 2015 02:39:36 GMT-0500 (CDT)] layer "bbendergomez@gmail.com": Unsupported extension: com

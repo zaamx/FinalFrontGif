@@ -1,0 +1,10 @@
+{
+  "appId": "photobooth",
+  "apiKey": "77728edbe7a33503dc10f387edef7bcae87bed0b8ba90f729f1ac8177f787c77",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

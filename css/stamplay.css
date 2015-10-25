@@ -1,0 +1,74 @@
+#table-container{
+	border : 0px;
+	cellpadding : 0px; 
+	cellspacing : 0px; 
+	width : 85%; 
+	bgcolor : #f6f6ef;
+}
+
+#table-internal{
+	border : 0px;
+	cellpadding : 0;
+	cellspacing : 0;
+	width : 100%; 
+	padding : 2px;
+}
+
+.row-blue{
+	background-color: #414b82;
+}
+
+.logo-container{
+	width:18px;
+	padding-right:4px;
+}
+
+.logo-img{
+	width:18px;
+	height:18px;
+	border:1px #ffffff solid;
+}
+
+#submit-button{
+	display: none;
+}
+
+#logout-btn{
+	display: none;
+}
+
+.twitter-typeahead { width:300px; display: inline-block; }
+.twitter-typeahead .tt-input, .twitter-typeahead .tt-hint { 
+	width: 100%; 
+	margin: 0px; 
+	padding: 5px 5px; 
+	border: 1px solid #ccc; 
+	outline: none; 
+}
+.twitter-typeahead .tt-input:focus { 
+	border: 2px solid #0097cf; 
+}
+.twitter-typeahead .tt-hint { 
+	color: #999; 
+}
+.twitter-typeahead .tt-dropdown-menu { 
+	width: 100%; 
+	padding: 0; 
+	background-color: #fff; 
+	border: 1px solid rgba(0, 0, 0, 0.2); 
+	border-top: 0px; 
+}
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion { 
+	text-align: left; 
+	padding: 3px 10px; 
+	font-size: 14px; 
+	line-height: 16px; 
+}
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion.tt-cursor { 
+	color: #fff; 
+	background-color: #0097cf; 
+}
+.twitter-typeahead .tt-dropdown-menu .tt-suggestion em { 
+	font-weight: bold; 
+	font-style: normal; 
+}

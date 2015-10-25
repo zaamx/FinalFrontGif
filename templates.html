@@ -1,0 +1,102 @@
+<script id="list-elem" type="text/html">
+<tr>
+	<td align="right" valign="top" class="title">{{ count }}.</td>
+	<td>
+		<center>
+			<a href="#" class="voteelem" data-postid="{{ id }}">
+				<div class="votearrow" title="upvote"></div>
+			</a>
+			<span id="down_{{ id }}"></span>
+		</center>
+	</td>
+	<td class="title">
+		<a href="{{ url }}">{{ title }}</a>
+		<span class="comhead">({{ shortUrl }})</span>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"></td>
+	<td class="subtext buffer-inserted">
+		<span id="score_{{ id }}" data-score="{{ votesLength }}">{{ votesLength }} points</span>
+		{{ dt_create }}|
+		<a href="/item.html?id={{ id }}">{{ commentLength }} comments</a>		
+	</td>
+</tr>
+<tr style="height:5px"></tr>
+</script>
+
+
+<script id="post-detail" type="text/html">
+<tr>
+	<td>
+		<center>
+			<a href="#" class="voteelem" data-postid="{{ id }}">
+				<div class="votearrow" title="upvote"></div>
+			</a>
+			<span></span>
+		</center>
+	</td>
+	<td class="title">
+		<a href="{{ url }}" target="_blank">{{ title }}</a>
+
+		<img src="{{ img }}" >
+
+		<pre>
+			
+		</pre>
+		<span class="comhead">({{ shortUrl }})</span>
+	</td>
+</tr>
+<tr>
+	<td colspan="1"></td>
+	<td class="subtext buffer-inserted">
+		<span>{{ votesLength }} points</span>
+		{{ dt_create }}
+	</td>
+</tr>
+<tr style="height:10px"></tr>
+<tr>
+	<td></td>
+	<td>
+		<form id="submitcomment" data-postid="{{ id }}" method="post" action="comment">
+			<textarea name="text" rows="6" cols="60"></textarea>
+			<br>
+			<br>
+			<input type="submit" value="add comment"></form>
+	</td>
+</tr>
+</script>
+
+
+<script id="post-comment" type="text/html">
+<tr>
+	<td>
+		<table border="0">
+			<tbody>
+				<tr>
+					<td></td>
+					<td valign="top">
+						<center>
+							<a href="#">
+								<div class="" title="upvote"></div>
+							</a>
+							<span id="down_7904745"></span>
+						</center>
+					</td>
+					<td class="default">
+						<div style="margin-top:2px; margin-bottom:-10px; ">
+							<span class="comhead">
+								<a href="#">{{ displayName }}</a>
+								{{ dt_create }}
+							</span>
+						</div>
+						<br>
+						<span class="comment"> <font color="#000000">{{ text }}</font>
+						</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</td>
+</tr>
+</script>
